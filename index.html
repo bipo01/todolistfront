@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>To-Do List</h1>
+
+            <input
+                type="text"
+                name="activity"
+                id="activity"
+                required
+                autocomplete="off"
+            />
+            <button class="btnAdd">Add</button>
+
+            <ul class="lista"></ul>
+            <!--
+            
+            <ol>
+               
+                <li>
+                    <form
+                        id="itemASumir"
+                        action="/delete"
+                        method="post"
+                    >
+                        <input
+                            type="hidden"
+                            name="deletado"
+                            value=""
+                        />
+                        <input
+                            type="submit"
+                            value=""
+                        />
+                        <span
+                            onclick="toggleForm('')"
+                            class="spanEdit"
+                            >✏️</span
+                        >
+                    </form>
+
+                    <form
+                        id="idAtividade"
+                        class="hidden"
+                        action="/edit"
+                        method="post"
+                    >
+                        <input
+                            type="hidden"
+                            name="idEditado"
+                            value=""
+                        />
+                        <input
+                            class="inputEditar"
+                            type="text"
+                            name="editado"
+                            id="idInput"
+                            placeholder=""
+                        />
+                        <input id="btnEnviar" type="submit" value="✅" />
+                    </form>
+                </li>
+                
+            </ol>
+            
+            -->
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
