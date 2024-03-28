@@ -31,18 +31,19 @@ async function collectAll() {
 
 async function add() {
     let input = document.querySelector("#activity");
+    if (input.value.trim().length > 0) {
+        console.log(input.value);
+        const response = await fetch(
+            `https://todolist-api-theta.vercel.app/add?atividade=${input.value}`
+        );
 
-    console.log(input.value);
-    const response = await fetch(
-        `https://todolist-api-theta.vercel.app/add?atividade=${input.value}`
-    );
+        const data = await response.json();
+        console.log(data);
 
-    const data = await response.json();
-    console.log(data);
+        input.value = "";
 
-    input.value = "";
-
-    collectAll();
+        collectAll();
+    }
 }
 
 async function apagar() {
